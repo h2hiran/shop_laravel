@@ -19,6 +19,7 @@ Route::any('/test','frontendcontroller@test');
 
 
 
+
 //for page 404 send variable
 
 //\View::composer('errors/404', function($view)
