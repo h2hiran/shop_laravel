@@ -1,0 +1,113 @@
+.sidebar-dark-primary .nav-sidebar>.nav-item>.nav-link.active {
+    color: #fff;
+    background-color: #000000;
+}
+
+.sidebar-dark-primary .nav-treeview>.nav-item>.nav-link.active, .sidebar-dark-primary .nav-treeview>.nav-item>.nav-link.active:hover {
+    color: #343a40;
+    background-color: rgba(243, 157, 157, 0.9);
+}
+
+div.dataTables_wrapper div.dataTables_length select {
+    width: 75px;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+div.dataTables_wrapper div.dataTables_filter input {
+    margin-left: 0.5em;
+    display: inline-block;
+    width: auto;
+}
+
+.btn:not(:disabled):not(.disabled) {
+    background-color: #007bff;
+    border: none;
+    color: white;
+    padding: 12px 16px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.table-striped tr td:last-of-type {
+    text-align: center;
+}
+
+.table-bordered td, .table-bordered th {
+    text-align: center;
+}
+
+
+
+
+/*
+  for tag
+*/
+
+span.remove {
+    padding: 10px;
+}
+
+.tag {
+    display: inline-block;
+    color: #222;
+    background-color: #FAFAFA;
+    border: 1px solid #95a5a6;
+    padding: 2px 8px;
+    margin: 1px 2px;
+    border-radius: 7px;
+    white-space: nowrap;
+    cursor:default;
+}
+
+.tag:hover {
+    color: #FAFAFA;
+    border: 1px solid #263238;
+    background-color: #263238;
+}
+
+.tag.over {
+    border: 1px dashed #000;
+}
+
+.tag.delete {
+    background-color: #e74c3c;
+    border: 1px solid #e67e22;
+}
+
+.tag .remove {
+    display: none;
+    font-size: 12px;
+    margin-left: 6px;
+    margin-right: -2px;
+    cursor: pointer;
+}
+
+.tag.delete .remove {
+    display: inline;
+}
+
+[draggable] {
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+
+
+
+/*
+  end tag
+*/
+
+
+
+
+
+
+
+
+
+
+
+
