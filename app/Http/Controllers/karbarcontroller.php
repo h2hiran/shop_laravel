@@ -15,11 +15,7 @@ use SoapClient;
 class karbarcontroller extends Controller
 {
 
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
+
     public function index()
     {
 //        if(session('login'))
@@ -28,22 +24,7 @@ class karbarcontroller extends Controller
         return view('frontend.user.user_login',compact('menu'));
     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
-    {
-        //
-    }
 
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
     public function store(Request $request)
     {
 
@@ -195,6 +176,7 @@ class karbarcontroller extends Controller
                 'mobile' => $mobile,
                 'pass' => $pass,
             ]);
+        session::put('karbar_name', $name . ' ' . $family);
         return redirect()->back();
 
     }
