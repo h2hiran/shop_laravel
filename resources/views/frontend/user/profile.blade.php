@@ -59,17 +59,18 @@
             </div>
             <!-- Profile Settings-->
             <div class="col-lg-8 pb-5">
-                <form class="row">
+                <form class="row" action="/profile_change" method="post">
+                    {{csrf_field()}}
                     <div class="col-md-6">
                         <div class="form-group">
                             <label for="account-fn">نام</label>
-                            <input class="form-control" type="text" id="account-fn" value="{{$user->name}}" required>
+                            <input class="form-control" type="text" id="account-fn" value="{{$user->name}}" name="name">
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="form-group">
                             <label for="account-ln">نام خانوادگی</label>
-                            <input class="form-control" type="text" id="account-ln" value="{{$user->family}}" required>
+                            <input class="form-control" type="text" id="account-ln" value="{{$user->family}}" name="family">
                         </div>
                     </div>
                     <div class="col-md-6">
@@ -81,13 +82,13 @@
                     <div class="col-md-6">
                         <div class="form-group">
                             <label for="account-phone">شماره تلفن</label>
-                            <input class="form-control" type="text" id="account-phone" value="{{$user->mobile}}" required>
+                            <input class="form-control" type="text" id="account-phone" value="{{$user->mobile}}" name="mobile">
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="form-group">
                             <label for="account-pass">رمز عبور جدید</label>
-                            <input class="form-control" type="password" id="account-pass">
+                            <input class="form-control" type="password" id="account-pass" name="pass">
                         </div>
                     </div>
                     <div class="col-md-6">
@@ -98,9 +99,8 @@
                     </div>
                     <div class="col-12">
                         <hr class="mt-2 mb-3">
-                            <button class="btn btn-primary" type="button" data-toast data-toast-position="topRight" data-toast-type="success" data-toast-icon="fe-icon-check-circle" data-toast-title="موفق!" data-toast-message="اطلاعات شما با موفقیت به روز شد.">بروزرسانی پروفایل</button>
+                            <button class="btn btn-primary" type="submit" data-toast data-toast-position="topRight" data-toast-type="success" data-toast-icon="fe-icon-check-circle" data-toast-title="موفق!" data-toast-message="اطلاعات شما با موفقیت به روز شد.">بروزرسانی پروفایل</button>
                         </div>
-                    </div>
                 </form>
             </div>
         </div>

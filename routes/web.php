@@ -36,6 +36,7 @@ Route::post('/user_store', 'karbarcontroller@store');
 Route::get('/account-logout', 'karbarcontroller@destroy');
 Route::get('/account', 'karbarcontroller@show');
 Route::get('/account-profile', 'karbarcontroller@profile');
+Route::post('/profile_change', 'karbarcontroller@profile_change');
 Route::get('/account-orders', 'karbarcontroller@orders');
 Route::get('/account-wishlist', 'karbarcontroller@wishlist');
 

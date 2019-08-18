@@ -160,6 +160,45 @@ class karbarcontroller extends Controller
         return view('frontend.user.profile',compact('menu','user'));
     }
 
+    public function profile_change(Request $request)
+    {
+        $karbar=karbar::find( session::get('login'));
+
+        if ($request->name!=null)
+            $name=$request->name;
+        else
+            $name=$karbar->name;
+
+
+        if ($request->family!=null)
+            $family=$request->family;
+        else
+            $family=$karbar->family;
+
+
+        if ($request->mobile!=null)
+            $mobile=$request->mobile;
+        else
+            $mobile=$karbar->mobile;
+
+
+        if ($request->pass!=null)
+            $pass=$request->pass;
+        else
+            $pass=$karbar->pass;
+
+        karbar::where('id', session::get('login'))
+            ->update([
+
+                'name' => $name,
+                'family' => $family,
+                'mobile' => $mobile,
+                'pass' => $pass,
+            ]);
+        return redirect()->back();
+
+    }
+
     public  function orders()
     {
         if(! session('login'))
