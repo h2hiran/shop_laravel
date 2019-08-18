@@ -15,7 +15,7 @@ Route::any('/search','frontendcontroller@search');
 Route::any('/about','frontendcontroller@about');
 
 Route::any('/test','frontendcontroller@test');
-
+Route::any('/test','frontendcontroller@test');
 
 
 
