@@ -14,7 +14,7 @@ use SoapClient;
 
 class karbarcontroller extends Controller
 {
-
+//asasdadadasdjahsdgajshdg
 
     public function index()
     {
@@ -167,6 +167,7 @@ class karbarcontroller extends Controller
             $pass=$request->pass;
         else
             $pass=$karbar->pass;
+
 
         karbar::where('id', session::get('login'))
             ->update([
