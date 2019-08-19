@@ -14,8 +14,10 @@ class ComposerStaticInite45b303d0535193825ea89a83a494d7b
         '023d27dca8066ef29e6739335ea73bad' => __DIR__ . '/..' . '/symfony/polyfill-php70/bootstrap.php',
         '1d1b89d124cc9cb8219922c9d5569199' => __DIR__ . '/..' . '/hamcrest/hamcrest-php/hamcrest/Hamcrest.php',
         '2c102faa651ef8ea5874edb585946bce' => __DIR__ . '/..' . '/swiftmailer/swiftmailer/lib/swift_required.php',
+        '4364d9898253482270d33c3e7d349234' => __DIR__ . '/..' . '/hekmatinasser/notowo/src/helpers.php',
         '6124b4c8570aa390c21fafd04a26c69f' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/deep_copy.php',
         '801c31d8ed748cfa537fa45402288c95' => __DIR__ . '/..' . '/psy/psysh/src/functions.php',
+        '4ad677cf23be1eeec8c74951804d4cb0' => __DIR__ . '/..' . '/hekmatinasser/verta/src/helpers.php',
         'f0906e6318348a765ffb6eb24e0d0938' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Foundation/helpers.php',
         '58571171fd5812e6e447dce228f52f4d' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Support/helpers.php',
     );
@@ -84,6 +86,11 @@ class ComposerStaticInite45b303d0535193825ea89a83a494d7b
         'I' => 
         array (
             'Illuminate\\' => 11,
+        ),
+        'H' => 
+        array (
+            'Hekmatinasser\\Verta\\' => 20,
+            'Hekmatinasser\\Notowo\\' => 21,
         ),
         'G' => 
         array (
@@ -236,6 +243,14 @@ class ComposerStaticInite45b303d0535193825ea89a83a494d7b
         array (
             0 => __DIR__ . '/..' . '/laravel/framework/src/Illuminate',
         ),
+        'Hekmatinasser\\Verta\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/hekmatinasser/verta/src',
+        ),
+        'Hekmatinasser\\Notowo\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/hekmatinasser/notowo/src',
+        ),
         'Gloudemans\\Shoppingcart\\' => 
         array (
             0 => __DIR__ . '/..' . '/gloudemans/shoppingcart/src',
@@ -348,7 +363,6 @@ class ComposerStaticInite45b303d0535193825ea89a83a494d7b
         'Carbon\\Laravel\\ServiceProvider' => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon/Laravel/ServiceProvider.php',
         'Carbon\\Translator' => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon/Translator.php',
         'Carbon\\Upgrade' => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon/Upgrade.php',
-        'CreatTttTable' => __DIR__ . '/../..' . '/database/migrations/2019_08_15_092807_creat_ttt_table.php',
         'CreateBrandsTable' => __DIR__ . '/../..' . '/database/migrations/2019_07_20_074416_create_brands_table.php',
         'CreateFavsTable' => __DIR__ . '/../..' . '/database/migrations/2019_07_29_080432_create_favs_table.php',
         'CreateFrontendsTable' => __DIR__ . '/../..' . '/database/migrations/zzz/2019_07_14_074822_create_frontends_table.php',
@@ -927,6 +941,12 @@ class ComposerStaticInite45b303d0535193825ea89a83a494d7b
         'Hamcrest\\Type\\IsString' => __DIR__ . '/..' . '/hamcrest/hamcrest-php/hamcrest/Hamcrest/Type/IsString.php',
         'Hamcrest\\Util' => __DIR__ . '/..' . '/hamcrest/hamcrest-php/hamcrest/Hamcrest/Util.php',
         'Hamcrest\\Xml\\HasXPath' => __DIR__ . '/..' . '/hamcrest/hamcrest-php/hamcrest/Hamcrest/Xml/HasXPath.php',
+        'Hekmatinasser\\Notowo\\Notowo' => __DIR__ . '/..' . '/hekmatinasser/notowo/src/Notowo.php',
+        'Hekmatinasser\\Notowo\\NotowoServiceProvider' => __DIR__ . '/..' . '/hekmatinasser/notowo/src/NotowoServiceProvider.php',
+        'Hekmatinasser\\Verta\\Facades\\Verta' => __DIR__ . '/..' . '/hekmatinasser/verta/src/Facades/Verta.php',
+        'Hekmatinasser\\Verta\\JalaliValidator' => __DIR__ . '/..' . '/hekmatinasser/verta/src/JalaliValidator.php',
+        'Hekmatinasser\\Verta\\Verta' => __DIR__ . '/..' . '/hekmatinasser/verta/src/Verta.php',
+        'Hekmatinasser\\Verta\\VertaServiceProvider' => __DIR__ . '/..' . '/hekmatinasser/verta/src/VertaServiceProvider.php',
         'Illuminate\\Auth\\Access\\AuthorizationException' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Auth/Access/AuthorizationException.php',
         'Illuminate\\Auth\\Access\\Gate' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Auth/Access/Gate.php',
         'Illuminate\\Auth\\Access\\HandlesAuthorization' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Auth/Access/HandlesAuthorization.php',

@@ -15,6 +15,8 @@ use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Session;
 use SoapClient;
 
+use Hekmatinasser\Verta\Verta;
+
 class frontendcontroller extends Controller
 {
 
@@ -107,18 +109,10 @@ class frontendcontroller extends Controller
 
     public function test()
     {
-        $b=null;
-        $b=prodoct::find('95')->karbar()->get();
-
-        if ($b=='[]')
-            echo 'null';
-
-        else
-            echo 'yes';
-
-return $b;
-
-
+        $time = brand::find(1);
+//       return $time->created_at->timestamp;
+        $v = new Verta(1563932737);
+        return $v;
     }
 
 

@@ -64,7 +64,7 @@ return [
     |
     */
 
-    'timezone' => 'UTC',
+    'timezone' => 'Asia/Tehran',
 
     /*
     |--------------------------------------------------------------------------
@@ -177,7 +177,10 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
-        Gloudemans\Shoppingcart\ShoppingcartServiceProvider::class
+        Gloudemans\Shoppingcart\ShoppingcartServiceProvider::class,
+
+
+        Hekmatinasser\Verta\VertaServiceProvider::class,
 
     ],
 
@@ -230,6 +233,9 @@ return [
 
 
         'Cart' => Gloudemans\Shoppingcart\Facades\Cart::class,
+
+
+        'Verta' => Hekmatinasser\Verta\Verta::class,
     ],
 
 ];
